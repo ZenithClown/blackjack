@@ -129,3 +129,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ignore cards images, can be downloaded from internet
+assets/cards
+
+# ignore windows files
+desktop.ini
