@@ -31,7 +31,7 @@ class Card:
         if self.value.isnumeric():
             return int(self.value)
 
-        elif self.card.value == "A":
+        elif self.value == "A":
             # set the value of A as per Game Rules
             if hand_has_ace and (hand_total_value >= 21):
                 return 1
@@ -117,9 +117,23 @@ class Hand:
 
         return self.value
 
+    @property
+    def is_blackjack(self) -> bool:
+        """Check if the Total is 21 == then the Hand Wins"""
+
+        if self.value == 21:
+            return True
+
+        return False
+
     def showHand(self):
         if self.dealer:
-            return ["hidden", self.cards[1]]
+            _cards = ["hidden", self.cards[1]]
         else:
-            return [card for card in self.cards]
-    
+            _cards = [card for card in self.cards]
+
+        disp_str = ''
+        for idx, val in enumerate(_cards):
+            disp_str += f"   Card : {idx + 1} is {val}\n"
+
+        return disp_str
