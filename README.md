@@ -11,4 +11,4 @@
 	<a href = "https://stackoverflow.com/users/6623589/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/stackoverflow.svg"/></a>
 </h1>
 
-<p align = "justify">The popular game of <b>Black Jack</b> also known as the <b>21</b> is implemented with <i>Python 3.6+</i> and the GUI is built with <i>tkinter</i>.</p>
+<p align = "justify">The popular game of <b>Black Jack</b>, also known as the <b>21</b>, is implemented with <i>Python 3.6+</i> and the GUI is built with <i>tkinter</i>. The cards' images can be downloaded from <a href="https://opengameart.org/content/playing-cards-0">here</a>. I'll be using the "modern-cards" design for the GUI!</p>
