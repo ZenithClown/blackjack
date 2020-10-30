@@ -26,8 +26,8 @@ def command_line_interface():
             dealerHand.addCard(deck.deal())
 
         num_cards_to_draw = 1 # after 1st iter, draw single card each time "stick"
-        print(f"Player Cards :\n{playerHand.showHand()}")
-        print(f"Dealer Cards :\n{dealerHand.showHand()}")
+        print(f"Player Cards [{playerHand.getValue}] :\n{playerHand.showHand()}")
+        print(f"Dealer Cards [{dealerHand.getValue}] :\n{dealerHand.showHand()}")
 
         # check if black jack obtained
         for p, msg in zip([playerHand, dealerHand], ["Player", "Dealer"]):
