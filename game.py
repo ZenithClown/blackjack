@@ -25,7 +25,7 @@ def command_line_interface():
             playerHand.addCard(deck.deal())
             dealerHand.addCard(deck.deal())
 
-        num_cards_to_draw = 1 # after 1st iter, draw single card
+        num_cards_to_draw = 1 # after 1st iter, draw single card each time "stick"
         print(f"Player Cards :\n{playerHand.showHand()}")
         print(f"Dealer Cards :\n{dealerHand.showHand()}")
 
