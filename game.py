@@ -58,7 +58,7 @@ if __name__ == '__main__':
     print("*** Welcome to CLI/GUI Black Jack (21) Game ***".center(columns))
 
     # Choose Game Type, if y = CLI else GUI | Defaults to CLI
-    gameType = input("Play Game in CLI (Y/n) : ").lower() or "y"
+    gameType = input("Play Game in CLI (Y/n) [yes]: ").lower() or "y"
 
     if gameType in ["y", "yes"]:
         print("*** Starting CLI Game Play ***".center(columns))

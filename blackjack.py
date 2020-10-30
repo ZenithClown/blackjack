@@ -128,7 +128,7 @@ class Hand:
 
     def showHand(self):
         if self.dealer:
-            _cards = ["hidden", self.cards[1]]
+            _cards = ["hidden"] + self.cards[1:]
         else:
             _cards = [card for card in self.cards]
 

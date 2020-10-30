@@ -133,5 +133,8 @@ dmypy.json
 # ignore cards images, can be downloaded from internet
 assets/cards
 
+# ignore test directory
+.testCodes
+
 # ignore windows files
 desktop.ini
